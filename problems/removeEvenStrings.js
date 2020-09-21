@@ -7,8 +7,8 @@
 
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+  return arr.filter((str) => str.length % 2 === 1)
 }
 
 module.exports = removeEvenStrings

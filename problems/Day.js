@@ -11,7 +11,13 @@
 
 
 class Day {
-
+  constructor(temperature, weather) {
+    this.temperature = temperature
+    this.weather = weather
+  }
+  getDescription() {
+    return `It is ${this.temperature} degrees and ${this.weather}`
+  }
 }
 
 /**
@@ -23,8 +29,8 @@ class Day {
 
 */
 
-function getAllDayDescriptions() {
-    
+function getAllDayDescriptions(days) {
+    return days.map((day) => day.getDescription())
 }
 
 

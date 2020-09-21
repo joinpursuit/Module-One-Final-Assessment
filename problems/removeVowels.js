@@ -7,8 +7,11 @@
 
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+  return str
+  .split("")
+  .filter((char) => !"aeiou".split("").includes(char.toLowerCase()))
+  .join("")
 }
 
 module.exports = removeVowels

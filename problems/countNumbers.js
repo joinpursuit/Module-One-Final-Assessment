@@ -9,8 +9,10 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    for(let i = 0; i < arr.length; i++)
+    
+    return Object.keys(arr)
 }
 
 

@@ -6,21 +6,8 @@ const removeNumbersAtOddIndices = require("./removeNumbersAtOddIndices")
 */
 function removeOddNumbers(arr) {
     return arr.filter((num)=>{
-        if (num % 2=== 0){
-            return num
-        }
-    })
+        return num % 2 === 0
+        })
 }
-
-console.log(removeOddNumbers([0,1,2,4]))
-//     return arr.filter((number)=>{
-//         if (number === 0 || number % 2=== 0){
-//             return number 
-//         }
-//     })
-// }
-
-
-
 
 module.exports = removeOddNumbers

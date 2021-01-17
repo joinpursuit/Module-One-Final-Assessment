@@ -15,30 +15,4 @@ function getCountriesSortedByPopulation(arr) {
     })
 }
 
-// console.log(getCountriesSortedByPopulation([
-//     {
-//       country: "Algeria",
-//       population: 41,
-//     },
-//     {
-//       country: "Belize",
-//       population: 0.4,
-//     },
-//     {
-//       country: "China",
-//       population: 1386,
-//     },
-//     {
-//       country: "Denmark",
-//       population: 6,
-//     },
-//   ])
-// )
 module.exports = getCountriesSortedByPopulation
-
-
-// function sortPeopleByAge(people) { // sort - mutates the original array
-//     return people.sort((keyNameFirst, keyNameSecond) => { 
-//       return keyNameFirst["age"] - keyNameSecond["age"] // or keyNameFirst.age 
-//     })
-//   }

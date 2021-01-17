@@ -19,6 +19,4 @@ function sevenBoom(num) {
   return newArr;
 }
 
-console.log(sevenBoom(59));
-
 module.exports = sevenBoom;

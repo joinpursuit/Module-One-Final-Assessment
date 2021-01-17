@@ -6,8 +6,14 @@
 * @returns {string[]} - Returns the strings in arr that have an odd number of characters
 */
 
-function removeEvenStrings() {
-
-}
-
+const removeEvenStrings = (arr) => {
+    let output = []
+     arr.forEach((words) => {
+        if(words.length % 2 === 1){
+           output.push(words)
+        }
+        })
+        return output
+    }
+    
 module.exports = removeEvenStrings

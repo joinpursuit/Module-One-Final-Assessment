@@ -9,9 +9,19 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+ let count = {};
+ for(let i = 0; i < arr.length; i++){
+     let el = arr[i]
+     if(count[el]){
+         count[el] += 1
+     }else{
+         count[el] = 1
+     }
+ }
+ return count
 }
+console.log(countNumbers([1,1,1,2,2,3,4]))
 
 
 module.exports = countNumbers

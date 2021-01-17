@@ -6,7 +6,16 @@
 * @returns {string} - Returns a new string without any vowels.
 */
 
-function removeVowels() {
+function removeVowels(str) {
+    let newStr = "";
+    const vowels =  ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    for ( let i = 0; i < str.length; i++){
+        let char = str[i];
+        if(!vowels.includes(char)){
+            newStr += char
+        }
+    }
+    return newStr;
 
 }
 

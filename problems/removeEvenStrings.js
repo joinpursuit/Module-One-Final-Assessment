@@ -6,8 +6,14 @@
 * @returns {string[]} - Returns the strings in arr that have an odd number of characters
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+  newArray = [];
+  arr.forEach((el) => {
+    if (el.length % 2 === 1) {
+      newArray.push(el);
+    }
+  });
+  return newArray;
 }
 
-module.exports = removeEvenStrings
+module.exports = removeEvenStrings;

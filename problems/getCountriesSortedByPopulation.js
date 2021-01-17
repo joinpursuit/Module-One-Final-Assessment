@@ -9,13 +9,9 @@
 
 function getCountriesSortedByPopulation() {
     let arr = [];
-    for (arr in getCountriesSortedByPopulation [" "]) {
-        arr.push(getCountriesSortedByPopulation ["result"] [arr])
-    }
-    arr.sort(function(a, b) {
-        return a.getCountriesSortedByPopulation9(b)
-    }
-
-}
-
+    return arr.sort(function(country, population) {
+        return population - country 
+    })
+    return []
+};
 module.exports = getCountriesSortedByPopulation

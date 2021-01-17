@@ -6,8 +6,18 @@
 * @returns {number} - Returns the second smallest number.
 */
 
-function secondSmallest() {
-  
+const secondSmallest = (arr) => {
+    let firstSmall = arr[0]
+    let secondSmall = arr[1]
+    for (let i = 1; i < arr.length; i++) {
+        if(arr[i] < firstSmall) {
+            secondSmall = firstSmall
+            firstSmall = arr[i]
+        } else if (arr[i] < secondSmall) {
+            secondSmall =arr[i]
+        }
+    }
+  return secondSmall
 }
 
 module.exports = secondSmallest

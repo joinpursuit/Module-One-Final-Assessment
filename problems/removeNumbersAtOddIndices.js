@@ -2,7 +2,13 @@
 * @param {number[]} arr - The input array
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 */
-function removeNumbersAtOddIndices() {
+function removeNumbersAtOddIndices(arr) {
+    let output = arr.toString("");
+    for (i = 0; i < arr.length; i += 2)
+        output += arr[i];
+
+
+    return output;
 
 }
 

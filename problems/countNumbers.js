@@ -9,9 +9,23 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let count = {}
+    for (let i = 0; i < arr.length; i++) {
+        const el = arr[i];
+        if (count[el]) {
+            count[el] += 1
+        } else {
+            count[el] = 1;
+
+        }
+        console.log(count)
+    }
+
+    return count;
+
 }
+
 
 
 module.exports = countNumbers

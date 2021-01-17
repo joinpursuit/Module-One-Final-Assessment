@@ -4,7 +4,12 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom() {
+function sevenBoom(num) {
+
+    let output = num.every((el) => {
+        Math.floor(el * 7) && (el % 10 === 7).replace("BOOM")
+        return output
+    })
 
 }
 

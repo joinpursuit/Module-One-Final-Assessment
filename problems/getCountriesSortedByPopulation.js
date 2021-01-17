@@ -7,8 +7,17 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
+    return arr.sort((country1, country2) => {
+        console.log(arr);
+        if (country2.population > country1.population) {
+            console.log(arr)
+        }
+        return Math.floor(country2.population - country1.population)
+    })
+
 
 }
+
 
 module.exports = getCountriesSortedByPopulation

@@ -6,7 +6,20 @@
 * @returns {number} - Returns the second smallest number.
 */
 
-function secondSmallest() {
+const removeNumbersAtOddIndices = require("./removeNumbersAtOddIndices")
+
+function secondSmallest(arr) {
+    let first = +Infinity
+    let second = +Infinity
+    arr.forEach((num) => {
+        if (num < first){
+            second = first
+            first = num
+        } else if (num < second){
+            second = num
+        }
+    })
+    return second
   
 }
 

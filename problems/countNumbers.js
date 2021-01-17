@@ -11,13 +11,8 @@
 
 const countNumbers = arr => {
     let obj = {}
-    for (let i = 0; i < arr.length; i++) {
-        const element = arr[i];
-        if (obj[element]) {
-            obj[element] += 1
-        } else {
-            obj[element] = 1
-        }
+    for (const element of arr) {
+        obj[element] ? obj[element]++ : obj[element] = 1
     }
     return obj
 }

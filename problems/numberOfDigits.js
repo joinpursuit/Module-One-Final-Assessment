@@ -7,8 +7,9 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    let arr = n.toString().split('').map(Number)
+    return arr.length
 }
 
 module.exports = numberOfDigits

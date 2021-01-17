@@ -7,8 +7,16 @@
 
 */
 
-function isOdd() {
-
+function isOdd(n) {
+    if (n % 2 === 1) {
+        return true
+    }
+    else if (n % 2 === 0) {
+        return false
+    }
+    else if (n !== Number) {
+        return false
+    }
 }
 
 module.exports = isOdd

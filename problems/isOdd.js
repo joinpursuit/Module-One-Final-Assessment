@@ -7,8 +7,14 @@
 
 */
 
-function isOdd() {
-
+const isOdd = n => {
+    if(n % 2 === 0){
+        return false;
+    } else if(isNaN(n)) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 module.exports = isOdd

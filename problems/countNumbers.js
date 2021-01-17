@@ -9,8 +9,17 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+const countNumbers = arr => {
+    let count = {};
+    for (let i = 0; i < arr.length; i++){
+        const keyIsNum = arr[i];
+        if (count[keyIsNum ]) {
+        count[keyIsNum ] += 1;
+        } else {
+        count[keyIsNum ] = 1;
+        }
+    }
+    return count;
 }
 
 

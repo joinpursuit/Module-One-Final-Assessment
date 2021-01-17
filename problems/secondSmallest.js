@@ -9,7 +9,6 @@
 function secondSmallest(arr) {
     let smallNum = Infinity;
     let secondSmall = Infinity;
-  
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] < smallNum) {
         secondSmall = smallNum

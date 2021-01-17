@@ -5,38 +5,22 @@ const removeNumbersAtOddIndices = require("./removeNumbersAtOddIndices")
 * @returns {number[]} - The input array with all odd number removed
 */
 function removeOddNumbers(arr) {
-    return arr.filter((number)=>{
-        if(number%2 === 0){
-            return number 
+    return arr.filter((num)=>{
+        if (num % 2=== 0){
+            return num
         }
     })
 }
-console.log(removeOddNumbers([
-    808,
-    814,
-    174,
-    98,
-    632,
-    970,
-    0,
-    554,
-    608,
-    330,
-    90,
-    976,
-    806,
-    464,
-    786,
-    590,
-    898,
-    272,
-    812,
-    52,
-    388,
-    574,
-    262,
-    698,
-    48,
-  ]))
+
+console.log(removeOddNumbers([0,1,2,4]))
+//     return arr.filter((number)=>{
+//         if (number === 0 || number % 2=== 0){
+//             return number 
+//         }
+//     })
+// }
+
+
+
 
 module.exports = removeOddNumbers

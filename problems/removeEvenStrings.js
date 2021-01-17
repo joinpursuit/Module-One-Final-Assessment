@@ -8,9 +8,7 @@
 
 function removeEvenStrings(arr) {
     return arr.filter((string) =>{
-        if(string.length % 2 ===1){
-            return string 
-        }
+        return string.length % 2 === 1
     })
 }
 

@@ -7,8 +7,9 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    let nString = n.toString()
+    return nString.length
 }
 
 module.exports = numberOfDigits

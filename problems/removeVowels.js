@@ -6,8 +6,15 @@
 * @returns {string} - Returns a new string without any vowels.
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    let newStr = ""
+    for (let char of str) {
+        let letter = char.toLowerCase();
+        if (letter !== "a" && letter !== "e" && letter !== "i" && letter !== "o" && letter !== "u") {
+            newStr += char;
+        }
+    }
+    return newStr;
 }
 
 module.exports = removeVowels

@@ -6,8 +6,24 @@
 * @returns {number} - Returns the second smallest number.
 */
 
-function secondSmallest() {
-  
+const secondSmallest = nums => {
+    let smallMax = Infinity;
+    let small2ndMax = Infinity;
+    for (let i = 0; i < nums.length; i++) {
+        if (smallMax < nums[i] ) {
+            smallMax = nums[i];
+            small2ndMax = nums[i];
+        }
+    }
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] < smallMax)
+        smallMax = nums[i]
+        }
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > smallMax && nums[i] < small2ndMax)
+        small2ndMax = nums[i];
+        }
+    return small2ndMax;
 }
 
 module.exports = secondSmallest

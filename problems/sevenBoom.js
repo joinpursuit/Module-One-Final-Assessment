@@ -4,7 +4,16 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom() {
+const sevenBoom = n => {
+    boomArr = []
+    for (let i = 1; i <= n; i++) {
+        if (i % 7 === 0 || (i + '').includes(7)) {
+            boomArr.push('BOOM');
+        } else {
+            boomArr.push(i);
+        } 
+    }
+    return boomArr;
 
 }
 

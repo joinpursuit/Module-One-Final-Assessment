@@ -5,21 +5,16 @@
  * @returns {number[]} - An array matching the pattern described above
  */
 function sevenBoom(n) {
-  let output = [];
-  let numStr = n.toString();
-  for (let i = 0; i <= n; i++) {
-    output.push(i += 1);
+    let output = [];
+    for (let i = 1; i <= n; i++) {
+      let numStr = i.toString();
+      if (i % 7 === 0 || numStr.includes(`7`)) {
+        output.push("BOOM");
+      } else {
+        output.push(i);
+      }
+    }
+    return output;
   }
-    if (i % 7 === 0 && numStr.includes("7")) {
-      output.push("BOOM");
-    
-  }
-  return output;
-}
-
-let output = [];
-output.forEach(element => {
-    
-});
 
 module.exports = sevenBoom;

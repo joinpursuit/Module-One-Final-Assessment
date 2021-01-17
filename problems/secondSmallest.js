@@ -6,8 +6,10 @@
 * @returns {number} - Returns the second smallest number.
 */
 
-function secondSmallest() {
-  
-}
+const secondSmallest = (arr) => {
+  let sortedArr = arr.sort((a, b) => a - b);
+  return sortedArr.find((num) => num !== sortedArr[0]);
+};
+//console.log(secondSmallest([1,9,3,4,4,4,4,4,4,5,6,7,8]))
 
-module.exports = secondSmallest
+module.exports = secondSmallest;

@@ -6,9 +6,34 @@
 * @returns {string[]} - Returns an array of country names, sorted by their population in descending order
 * 
 */
+const getCountriesSortedByPopulation = (arr) => {
+  return arr
+    .sort((a, b) => {
+      return a.population - b.population;
+    })
+    .reverse()
+    .map((objCountry) => {
+      return (objCountry = objCountry.country);
+    });
+};
 
-function getCountriesSortedByPopulation() {
+// console.log(getCountriesSortedByPopulation([
+//     {
+//       country: "Algeria",
+//       population: 41,
+//     },
+//     {
+//       country: "Belize",
+//       population: 0.4,
+//     },
+//     {
+//       country: "China",
+//       population: 1386,
+//     },
+//     {
+//       country: "Denmark",
+//       population: 6,
+//     },
+//   ]))
 
-}
-
-module.exports = getCountriesSortedByPopulation
+module.exports = getCountriesSortedByPopulation;

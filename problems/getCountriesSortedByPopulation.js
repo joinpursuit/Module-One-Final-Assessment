@@ -36,6 +36,6 @@ let ex1 = [
       population: 6,
     },
   ]
-  console.log((getCountriesSortedByPopulation(ex1)))
+  // console.log((getCountriesSortedByPopulation(ex1)))
 
 module.exports = getCountriesSortedByPopulation

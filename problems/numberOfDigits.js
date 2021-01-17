@@ -18,6 +18,6 @@ function numberOfDigits(n) {
     }
     return count
 }
-console.log((numberOfDigits(73746)))
+// console.log((numberOfDigits(73746)))
 
 module.exports = numberOfDigits

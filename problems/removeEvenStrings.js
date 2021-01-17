@@ -9,6 +9,7 @@
 function removeEvenStrings(arr) {
     return arr.filter((el) => el.length % 2 === 1)
 }
-console.log(removeEvenStrings(["a", "bb", "ccc", "dddd", "eeeee"]))
+
+// console.log(removeEvenStrings(["a", "bb", "ccc", "dddd", "eeeee"]))
 
 module.exports = removeEvenStrings

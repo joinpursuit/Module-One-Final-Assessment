@@ -18,7 +18,7 @@ function removeVowels(str) {//figure out how to do with an array method
 
 }
 
-console.log(removeVowels("hello"));
-console.log(removeVowels("CAPITAL LETTERS DO COUNT"))
-console.log(removeVowels("y doesn't count"))
+// console.log(removeVowels("hello"));
+// console.log(removeVowels("CAPITAL LETTERS DO COUNT"))
+// console.log(removeVowels("y doesn't count"))
 module.exports = removeVowels;

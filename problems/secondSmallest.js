@@ -19,7 +19,8 @@ function secondSmallest(arr) {// figure out how to do it with .forEach or an arr
   }
   return s2;
 }
-console.log(secondSmallest([5, 1, 4, 2, 5, 6]));
-console.log(secondSmallest([1, 10, 7, 90, 5, 4]));
+
+// console.log(secondSmallest([5, 1, 4, 2, 5, 6]));
+// console.log(secondSmallest([1, 10, 7, 90, 5, 4]));
 
 module.exports = secondSmallest;

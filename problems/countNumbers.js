@@ -20,7 +20,6 @@ function countNumbers(arr) {
  })
  return obj
 }
-console.log(countNumbers([1,1,1,2,2,3,4]));
+// console.log(countNumbers([1,1,1,2,2,3,4]));
 
 module.exports = countNumbers
-// console.log(obj[el])

@@ -18,6 +18,6 @@ function sevenBoom(n) {
   return arr;
 }
 
-console.log(sevenBoom(20));
+// console.log(sevenBoom(20));
 
 module.exports = sevenBoom;

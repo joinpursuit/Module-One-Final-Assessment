@@ -7,8 +7,9 @@
 
 */
 
-function numberOfDigits() {
-
+const numberOfDigits = (n) => {
+    numStr = n + ""
+    return numStr.length
 }
 
 module.exports = numberOfDigits

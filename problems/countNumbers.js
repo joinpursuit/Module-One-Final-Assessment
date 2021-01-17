@@ -9,8 +9,18 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+const countNumbers = (arr) =>{
+    let obj = {}
+ for (let i = 0; i < arr.length; i++) {
+    let num = arr[i]
+    if(obj[num]) {
+        obj[num] += 1
+    }
+    else {
+        obj[num] = 1
+    }
+ }
+ return obj
 }
 
 

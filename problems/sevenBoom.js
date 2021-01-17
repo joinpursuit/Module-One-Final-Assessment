@@ -4,8 +4,8 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom() {
-
+function sevenBoom(n) {
+    
 }
 
 module.exports = sevenBoom

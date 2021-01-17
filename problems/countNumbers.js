@@ -9,8 +9,16 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let counter = {}
+ for(let el of arr){
+     if(counter[el]){
+         counter[el]++
+     }else{
+         counter[el] = 1
+     }
+ }
+ return counter
 }
 
 

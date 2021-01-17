@@ -7,8 +7,14 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+function getCountriesSortedByPopulation(arr) {
+  return arr
+    .sort((a, b) => {
+      return b.population - a.population;
+    })
+    .map((nameOnly) => {
+      return nameOnly.country;
+    });
 }
 
-module.exports = getCountriesSortedByPopulation
+module.exports = getCountriesSortedByPopulation;

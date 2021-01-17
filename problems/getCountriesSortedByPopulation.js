@@ -7,8 +7,29 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+//function getCountriesSortedByPopulation() {}
+// descending  ===> b - a
 
-}
+/* const getCountriesSortedByPopulation = (arr) => {
+    
+     arr.sort((country1, country2) => {
+    return country2.population - country1.population;
+     })
+    
+    return arr.map(arr => {
+        return arr.country;
+    })
+}  */
 
-module.exports = getCountriesSortedByPopulation
+// -- chaining --
+const getCountriesSortedByPopulation = (arr) => {
+	return arr
+		.sort((country1, country2) => {
+			return country2.population - country1.population;
+		})
+		.map((arr) => {
+			return arr.country;
+		});
+};
+
+module.exports = getCountriesSortedByPopulation;

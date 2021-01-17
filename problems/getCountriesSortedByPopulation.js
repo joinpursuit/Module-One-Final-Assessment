@@ -7,8 +7,31 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+let ex1 = [
+    {
+      country: "Algeria",
+      population: 41,
+    },
+    {
+      country: "Belize",
+      population: 0.4,
+    },
+    {
+      country: "China",
+      population: 1386,
+    },
+    {
+      country: "Denmark",
+      population: 6,
+    },
+  ]
 
+function getCountriesSortedByPopulation(arr) {
+    let sortedArr = arr.sort((a, b) => b.population - a.population)
+    
+    return sortedArr
 }
+
+console.log(getCountriesSortedByPopulation(ex1))
 
 module.exports = getCountriesSortedByPopulation

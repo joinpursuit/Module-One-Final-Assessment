@@ -7,8 +7,7 @@
 
 */
 
-function numberOfDigits() {
+const numberOfDigits = n => n.toString().length
 
-}
-
+//console.log(numberOfDigits(7463))
 module.exports = numberOfDigits

@@ -4,8 +4,10 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom() {
-
+function sevenBoom(n) {
+let boom = n.filter(boom2 => boom2 % 7)
+if(boom[i] === n){
+    n = "BOOM"
 }
 
 module.exports = sevenBoom

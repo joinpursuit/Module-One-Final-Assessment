@@ -7,8 +7,14 @@
 
 */
 
-function isOdd() {
-
+function isOdd(n) {
+return n.every((num) => {
+if (num % 2 == 1){
+    return true
+} else{
+    return false || NaN
+}
+})
 }
 
 module.exports = isOdd

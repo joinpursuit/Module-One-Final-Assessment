@@ -8,12 +8,13 @@
 */
 
 function getCountriesSortedByPopulation(arr) {
-    arr.sort((count1, count2) =>{
-        return count2.population - count1.population;
-    })
-    return arr.map((arr) =>{
-        return arr.country
-    })
-    // return arr.sort((count1, country2) => count2.population - count1.population).map(arr => arr.country)
+    return arr.sort((count1, count2) => count2.population - count1.population).map(arr => arr.country)
+
+    // arr.sort((count1, count2) =>{
+    //     return count2.population - count1.population;
+    // })
+    // return arr.map((arr) =>{
+    //     return arr.country
+    // })
 }
 module.exports = getCountriesSortedByPopulation

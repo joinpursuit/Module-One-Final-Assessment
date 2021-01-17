@@ -7,13 +7,14 @@
 
 */
 
-function isOdd(n) {
-    if (n % 2 === 1){
-        return true;
-    }else{
-        return false
-    }
+const isOdd = (n) => n % 2 === 1 ? true : false // changes
 
-}
+//     if (n % 2 === 1){
+//         return true;
+//     }else{
+//         return false
+//     }
+
+//}
 
 module.exports = isOdd

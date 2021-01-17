@@ -6,8 +6,15 @@
 * @returns {string} - Returns a new string without any vowels.
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+  let newStr = "";
+  let vowels = "aeiouAEIOU";
+  for (let i = 0; i < str.length; i++) {
+    if (!vowels.includes(str[i])) {
+      newStr += str[i];
+    }
+  }
+  return newStr;
 }
 
-module.exports = removeVowels
+module.exports = removeVowels;

@@ -13,9 +13,10 @@ function sevenBoom(n) {
             arr.push("BOOM");
             }else if (str[1]=== "7"){
         // }else if (str.includes("7")){
+            // }else if  ((str.split("")===typeof "7")){   
+                //else if should split number string and check for integer 7 and then string should be joined back)
             arr.push("BOOM") 
         }else{ 
-        // }else if  ((str.split("")===typeof "7")){   
             arr.push(num);
              }
             i+=1

@@ -7,8 +7,13 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    let count = 0
+    let str = '' + n
+    for(let i = 0; i < str.length; i++) {
+        count++
+    }
+    return count
 }
 
 module.exports = numberOfDigits

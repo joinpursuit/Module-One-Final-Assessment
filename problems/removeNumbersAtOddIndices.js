@@ -2,7 +2,10 @@
 * @param {number[]} arr - The input array
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 */
-function removeNumbersAtOddIndices() {
+function removeNumbersAtOddIndices(arr) {
+    return arr.filter((el, i) => {
+        return i % 2 === 0
+    })
 
 }
 

@@ -7,8 +7,14 @@
 
 */
 
-function isOdd() {
-
+function isOdd(n) {
+  if (n % 2 === 1) {
+    return true;
+  } else if (typeof n !== "number") {
+    return false;
+  } else {
+    return false;
+  }
 }
 
-module.exports = isOdd
+module.exports = isOdd;

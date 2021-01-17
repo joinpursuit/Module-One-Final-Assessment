@@ -7,7 +7,7 @@
 * 
 */
 
-const getCountriesSortedByPopulation = (arr) =>
-  arr.sort((a, b) => b.population - a.population).map((el) => el["country"]);
+const getCountriesSortedByPopulation = arr =>
+  arr.sort((a, b) => b.population - a.population).map(el => el["country"]);
 
 module.exports = getCountriesSortedByPopulation;

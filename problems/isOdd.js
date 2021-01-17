@@ -7,7 +7,7 @@
 
 */
 
-const isOdd = (n) => n % 2 === 1 
+const isOdd = n => n % 2 === 1 
 
 
 

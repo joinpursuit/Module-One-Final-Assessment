@@ -7,8 +7,14 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+const getCountriesSortedByPopulation = (arr) => {
+    return arr.sort ((a, b) => {
+        return Math.floor(b.population - a.population);
+    })
+    .map((arr) => {
+        return arr.country;
+    })
+};
 
-}
 
 module.exports = getCountriesSortedByPopulation

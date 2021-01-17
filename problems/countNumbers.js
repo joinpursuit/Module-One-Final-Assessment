@@ -9,8 +9,12 @@
  * returns { 1:3, 2:2, 3:1, 4:1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+ let obj = {}
+  for(let el of arr){
+      obj[el] ? obj[el]++ : obj[el] = 1
+  }
+  return obj
 }
 
 

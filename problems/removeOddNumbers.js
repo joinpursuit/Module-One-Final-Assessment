@@ -2,8 +2,8 @@
 * @param {number[]} arr - The input array
 * @returns {number[]} - The input array with all odd number removed
 */
-function removeOddNumbers() {
-
-}
+function removeOddNumbers(arr) {
+    return arr.filter(value => value % 2 === 1);
+    }
 
 module.exports = removeOddNumbers

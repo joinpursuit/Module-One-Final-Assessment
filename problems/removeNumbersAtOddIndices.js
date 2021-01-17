@@ -2,8 +2,7 @@
 * @param {number[]} arr - The input array
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 */
-function removeNumbersAtOddIndices() {
-
-}
+function removeNumbersAtOddIndices(arr) {
+   
 
 module.exports = removeNumbersAtOddIndices

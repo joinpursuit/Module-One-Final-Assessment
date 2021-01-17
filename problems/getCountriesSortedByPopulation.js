@@ -7,8 +7,17 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+const countNumbers = require("./countNumbers")
 
+function getCountriesSortedByPopulation(arr) {
+   return arr
+   .sort((a1,a2) => {
+      return a2.population - a1.population
+    })
+    .map((a) => {
+        return a.country
+    })
 }
+
 
 module.exports = getCountriesSortedByPopulation

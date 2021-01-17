@@ -6,9 +6,15 @@
 * @returns {number} - Returns how many digits are in the input.
 
 */
+//number 10 : 2 digits 
+const numberOfDigits= (n) => {
+    let output = 0
+    return n.toString().length;
+    }
 
-function numberOfDigits() {
+ 
 
-}
+
+
 
 module.exports = numberOfDigits

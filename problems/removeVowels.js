@@ -6,8 +6,8 @@
 * @returns {string} - Returns a new string without any vowels.
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    return str.replace("A", "E" ,"I", "O", "U")
 }
 
 module.exports = removeVowels

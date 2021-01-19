@@ -14,8 +14,16 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
-  
+function smallest(arr) {
+    let smallestNum = Infinity
+    for (let element of arr) {
+        if (smallestNum > element) {
+            smallestNum = element
+        }
+    }
+    return smallestNum
 }
+
+console.log(smallest([-99, 99, 57, 3, 6, 32]))
 
 module.exports = smallest

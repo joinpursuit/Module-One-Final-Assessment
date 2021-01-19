@@ -20,18 +20,17 @@
 // we then iterate through the newArr
 // 
 function removeVowels(str) {
-    let vowels = "aeiou" + "aeiou".toUpperCase()
-    let newArr = []
+    let vowel = "aeiou" + "AEIOU"
+    let newStr = str
+    let chars
 
-    for (let i = 0; i < vowels.length; i++) {
-        if (str.includes(vowels[i])) {
-
-        }
+    for (let i = 0; i < vowel.length; i++) {
+        chars = newStr.split(vowel[i])
+        newStr = chars.join('')
     }
-    
     return newStr
 }
 
-console.log(removeVowels("Hello"))
+console.log(removeVowels("Hello kiddo"))
 
 module.exports = removeVowels

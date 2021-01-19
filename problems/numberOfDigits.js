@@ -7,7 +7,13 @@
 
 */
 
-function numberOfDigits() {
+function numberOfDigits(n) {
+    let string = n.toString()
+    let num = 0
+    for(let i = 0;i<string.length;i++){
+        num = num + 1
+    }
+    return num
 
 }
 

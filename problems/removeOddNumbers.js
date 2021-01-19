@@ -14,8 +14,13 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
-
+function removeOddNumbers(arr) {
+    let numsCopy = [];
+    for (let i = 0; i <= arr.length - 1; i++)
+      if (arr[i] % 2 === 0) {
+        numsCopy.push(arr[i]);
+      }
+    return numsCopy;
 }
 
 module.exports = removeOddNumbers

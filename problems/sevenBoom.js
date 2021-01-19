@@ -10,9 +10,17 @@
 * 14 is replaced with 'BOOM' because it is a multiple of 7 (7 * 2 = 14)
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
-
-function sevenBoom() {
-
+n = 20
+function sevenBoom(n) {
+    let array = []
+    for (let i = 1; i <= n; i++) {
+        if (i % 7 === 0 || i.toString().includes(7) === true) {
+            array.push("BOOM")
+        } else {
+            array.push(i)
+        }
+    }
+return array
 }
-
+console.log(sevenBoom(n))
 module.exports = sevenBoom

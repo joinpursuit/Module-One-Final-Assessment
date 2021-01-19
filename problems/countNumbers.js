@@ -12,8 +12,16 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+  let arrObj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (arrObj[arr[i]] === undefined) {
+      arrObj[arr[i]] = 1;
+    } else {
+      arrObj[arr[i]]++;
+    }
+  }
+  return arrObj;
 }
 
 

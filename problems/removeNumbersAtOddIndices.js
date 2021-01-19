@@ -10,8 +10,14 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
 
+
+function removeNumbersAtOddIndices(arr) {
+  let evenOnly = arr.filter((num, i) => {
+    if (i % 2 === 0) {
+      return true;
+    }
+  });
+  return evenOnly;
 }
-
 module.exports = removeNumbersAtOddIndices

@@ -1,7 +1,7 @@
 {
   "name": "module-one-final-assessment",
   "version": "1.0.0",
-  "description": "Assessment for pursuit FSW module 1",
+  "description.only": "Assessment for pursuit FSW module 1",
   "main": "isOdd.js",
   "dependencies": {},
   "devDependencies": {

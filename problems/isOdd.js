@@ -9,8 +9,17 @@
 * ex: isOdd(75); // true
 */
 
-function isOdd() {
-
+function isOdd(n) {
+    if (n % 2 === 1) {
+        return true
+    }
+    else {
+        return false
+    }
 }
+
+console.log(isOdd(3))
+console.log(isOdd(2))
+
 
 module.exports = isOdd

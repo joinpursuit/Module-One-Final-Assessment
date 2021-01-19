@@ -14,8 +14,16 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
-
+function removeOddNumbers(arr) {
+    let newArr = []
+    for (let i of arr) {
+        if (i % 2 === 0) {
+            newArr.push(i)
+        }
+    }
+    return newArr
 }
+
+console.log(removeOddNumbers([1, 2, 3, 4, 5, 6, 7]))
 
 module.exports = removeOddNumbers

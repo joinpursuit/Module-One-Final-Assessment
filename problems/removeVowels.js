@@ -14,8 +14,16 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+let vowals = ['a','A','e','E','i','I','o','O','u','U']
+let arr = str.split('') 
+let newArr = []
+ for (let i = 0; i < arr.length; i++) {
+     if (!vowals.includes(arr[i])) {
+         newArr.push(arr[i])
+     }
+ } 
+ return newArr.join('')
 }
-
+console.log(removeVowels('HELLO'))
 module.exports = removeVowels

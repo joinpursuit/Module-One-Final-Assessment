@@ -50,15 +50,16 @@ let ex1 = [
   ]
 
 function getCountriesSortedByPopulation(arr) {
-
-    let sorted = [Object.values(arr)]
-    sorted.sort(function(a,b) {
-        return b-a
-    })
-return sorted
 }
+ let sorted = []
+     for(let key in arr) {
+         sorted.push(key)
+     }
+     sorted.sort(function(a,b) {
+         return b-a
+     })
 
-
+ 
 module.exports = getCountriesSortedByPopulation
 
 console.log(getCountriesSortedByPopulation(ex1))

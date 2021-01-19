@@ -14,8 +14,9 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
-  
+function smallest(arr) {
+    let small = Math.min.apply(Math, arr)
+  return small
 }
 
 module.exports = smallest

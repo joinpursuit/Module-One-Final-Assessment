@@ -10,7 +10,12 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
+function removeNumbersAtOddIndices(arr) {
+    let index = []
+    for(let i= 0; i < arr.length;i+= 2){
+        index.push(arr[i])
+    }
+    return index
 
 }
 

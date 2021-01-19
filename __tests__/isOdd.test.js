@@ -14,9 +14,4 @@ describe("isOdd", () => {
     expect(isOdd(1424)).toBe(false)
     expect(isOdd(4448)).toBe(false)
   })
-
-  test("returns false on NaN inputs", () => {
-    expect(isOdd(NaN)).toBe(false)
-    expect(isOdd("Hello!")).toBe(false)
-  })
 })

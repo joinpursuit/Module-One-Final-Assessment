@@ -19,8 +19,14 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+let oddCharArr = []
+    for(i = 0; i < arr.length; i++){
+        if(arr[i].length % 2 !== 0){
+            oddCharArr.push(arr[i])
+        }
+    }
+return oddCharArr
 }
-
+console.log(removeEvenStrings(["the", "cat", "is", "gray"]))
 module.exports = removeEvenStrings

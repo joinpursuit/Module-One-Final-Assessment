@@ -7,7 +7,14 @@
 
 */
 
-function numberOfDigits() {
+function numberOfDigits(n) {
+let strNum = n.toString()
+let digitCount = 0
+    for(i = 0; i < strNum.length; i++){
+        digitCount ++
+
+    }
+    return digitCount
 
 }
 

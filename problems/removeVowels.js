@@ -14,8 +14,13 @@
 *
 */
 
-function removeVowels() {
+function removeVowels(str) {
+    var vowels = ['a', 'e', 'i', 'o', 'u','A','E','I','O','U'];
 
+    return str.split('').filter(function(el) {
+      return vowels.indexOf(el.toLowerCase()) == -1;
+    }).join('');
 }
+console.log(removeVowels("HELLO"))
 
 module.exports = removeVowels

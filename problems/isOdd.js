@@ -9,7 +9,8 @@
 * ex: isOdd(75); // true
 */
 
-function isOdd() {
+function isOdd(n) {
+    return (n%2===1) ? true : false 
 
 }
 

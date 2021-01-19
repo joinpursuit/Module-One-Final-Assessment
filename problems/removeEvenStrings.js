@@ -19,8 +19,12 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+    //iterate through the arry
+    //filter out even length indexes
+    //return new array with odd only length indx
+    let oddString = arr.filter((elem) => elem.length % 2 !== 0)
+    return oddString
 }
 
 module.exports = removeEvenStrings

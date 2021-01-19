@@ -11,8 +11,18 @@
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
 
-function sevenBoom() {
-
-}
+function sevenBoom(n) {
+    let count = n
+    for (let i = 0; i < n+1; i++) {
+         count = i
+        console.log(count)
+        count.forEach(){
+            
+        }
+    }
+    console.log(count)
+} 
+  
+console.log(sevenBoom(20))
 
 module.exports = sevenBoom

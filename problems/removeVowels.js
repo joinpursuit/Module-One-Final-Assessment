@@ -14,8 +14,29 @@
 *
 */
 
-function removeVowels() {
+function removeVowels(string) {
+    let stringArr = string.split()
+    let vowelCheck = string.includes('a', 'e', 'i', 'o', 'u')
+    console.log(vowelCheck)
+    if (vowelCheck === true) {
+        string.
+        //remove from array and return a new string
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+    //if a string has a vowel
+    console.log(vowelCheck)
 }
-
+console.log(removeVowels('aeiou'))
 module.exports = removeVowels

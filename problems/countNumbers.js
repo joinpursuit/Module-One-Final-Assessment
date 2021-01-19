@@ -12,9 +12,13 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    for (let i = 0; i < arr.length; i++) { 
+    console.log(arr[i]);
+        }
+ return arr[i]   
 }
+
 
 
 module.exports = countNumbers

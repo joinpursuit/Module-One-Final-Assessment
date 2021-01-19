@@ -14,8 +14,11 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
 
+function removeOddNumbers(arr) {
+    let evenNums = []
+    
 }
+console.log(removeOddNumbers([3, 5, 7, 2, 4, 9, 11, 6]))
 
 module.exports = removeOddNumbers

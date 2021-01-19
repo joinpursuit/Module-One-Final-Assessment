@@ -15,7 +15,7 @@ function isOdd(n) {
         } else {
                 return false
             }
-            // n % 2 !== 0 ? "true" : "false"
+    // n % 2 !== 0 ? "true" : "false"
 }
 
 module.exports = isOdd

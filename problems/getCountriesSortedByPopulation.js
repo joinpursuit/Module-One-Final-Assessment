@@ -13,6 +13,8 @@
 function getCountriesSortedByPopulation(arr) {
     let sorted = arr.sort((current,next) => {
         return next.population - current.population
+    }).map ((elem) => {
+        return elem.country
     })
     return sorted
     

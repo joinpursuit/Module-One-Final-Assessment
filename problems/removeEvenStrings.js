@@ -19,7 +19,8 @@
 * returns: []
 */
 
-function removeEvenStrings() {
+function removeEvenStrings(arr) {
+    return arr.filter((elem) => {return elem.length % 2 === 1})
 
 }
 

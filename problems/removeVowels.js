@@ -14,7 +14,15 @@
 *
 */
 
-function removeVowels() {
+function removeVowels(str) {
+    let newStr = ""
+    let vowArr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    for (let i = 0; i <str.length; i++) {
+        if (!vowArr.includes(str[i])){
+            newStr += str[i]
+        }
+    }
+    return newStr
 
 }
 

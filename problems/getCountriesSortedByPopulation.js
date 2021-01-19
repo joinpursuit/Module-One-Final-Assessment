@@ -10,7 +10,13 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
+    return arr.sort((country1, country2) => {
+        return country2.population - country1.population
+    }).map((object) => {
+        return object.country
+    })
+
 
 }
 

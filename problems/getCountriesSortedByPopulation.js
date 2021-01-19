@@ -10,8 +10,18 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
 
+    let sorted = arr.sort((a, b) => {
+     if(a.population > b.population) {
+        return a.population - b.population
+    } else {
+        return b.population - a.population
+    }
+ })
+ return sorted
 }
+
+console.log(getCountriesSortedByPopulation([ { country: "Denmark", population: 6 }, { country: "China", population: 1386 }, { country: "Egypt", population: 145 }]))
 
 module.exports = getCountriesSortedByPopulation

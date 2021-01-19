@@ -20,7 +20,25 @@
 */
 
 function removeEvenStrings() {
+//    // takes in array of strings
+//    // if element is even indexed remove it
+
+//    return filtered = arr.filter((element) => {
+//         for(let i = 0; i > element.length; i++) {
+//             if (element[i] % 2 !== 0) {
+//                 return element
+//             }
+//         }
+//     })
+   
+   // else add odd indexed string to new array
+   // return new array
 
 }
+
+console.log(removeEvenStrings(["a", "bb", "ccc", "dddd", "eeeee"]))
+console.log(removeEvenStrings(["the", "cat", "is", "gray"]))
+console.log(removeEvenStrings(["four"]))
+console.log(removeEvenStrings([]))
 
 module.exports = removeEvenStrings

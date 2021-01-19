@@ -7,8 +7,13 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+   return n.toString().length
 }
+
+
+console.log(numberOfDigits(10))
+console.log(numberOfDigits(1000))
+console.log(numberOfDigits(100000))
 
 module.exports = numberOfDigits

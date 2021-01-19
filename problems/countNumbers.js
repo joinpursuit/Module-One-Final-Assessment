@@ -12,8 +12,17 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let mapped = {}
+    for (let i = 0; i < arr.length; i++) {
+        if (mapped[arr[i]] === undefined) {
+            mapped[arr[i]] = 1
+        }
+        else {
+            mapped[arr[i]] += 1
+        }
+    }
+    return mapped
 }
 
 

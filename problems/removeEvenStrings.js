@@ -19,8 +19,13 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+    let newArr = arr.filter((str) =>{
+      if (str.length % 2 === 1) {
+          return true 
+      } 
+    })
+    return newArr
 }
 
 module.exports = removeEvenStrings

@@ -19,7 +19,12 @@
 * returns: []
 */
 
-function removeEvenStrings() {
+function removeEvenStrings(arr) {
+    let newArr = ['']
+    let oddStr = [(0 % 2 === 1)]
+    for (let i = 0; i <= arr.length; i += 1)
+
+
 
 }
 

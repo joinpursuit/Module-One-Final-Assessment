@@ -9,9 +9,10 @@
 * returns: ["China", "Egypt", "Denmark"]
 * 
 */
-
-function getCountriesSortedByPopulation() {
-
+// newArr to be arranged in population order from big - small with country listed as well
+function getCountriesSortedByPopulation(arr) {
+let newArr = []
+// 
 }
 
 module.exports = getCountriesSortedByPopulation

@@ -9,8 +9,11 @@
 * ex: isOdd(75); // true
 */
 
-function isOdd() {
-
+function isOdd(n) {
+  return  (n % 2 === 1) ? true : false
 }
+//console.log(isOdd(7))
+
 
 module.exports = isOdd
+

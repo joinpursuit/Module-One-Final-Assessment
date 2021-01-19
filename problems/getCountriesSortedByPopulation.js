@@ -15,5 +15,4 @@ function getCountriesSortedByPopulation(arr) {
         .sort((a, b) => b.population-a.population)
         .map(el => el.country)
 }
-console.log(getCountriesSortedByPopulation([ { country: "Denmark", population: 6 }, { country: "China", population: 1386 }, { country: "Egypt", population: 145 }]))
 module.exports = getCountriesSortedByPopulation

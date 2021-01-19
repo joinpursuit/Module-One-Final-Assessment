@@ -13,5 +13,4 @@ function numberOfDigits(n) {
     .split("")
     .length
 }
-//console.log(numberOfDigits(500000))
 module.exports = numberOfDigits

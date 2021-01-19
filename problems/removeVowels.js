@@ -14,8 +14,8 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    return str.replace("A", "E" ,"I", "O", "U")
 }
 
 module.exports = removeVowels

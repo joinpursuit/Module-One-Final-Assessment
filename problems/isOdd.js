@@ -8,9 +8,15 @@
 * ex: isOdd(4); // false
 * ex: isOdd(75); // true
 */
+//Can't get the even to pass
+function isOdd(num) {
+   if(num % 2 === 0) {
+       return false; {
+       }
+   }else if (isNaN(false)) {
 
-function isOdd() {
-
-}
-
+   } else {
+       return false
+   }
+};
 module.exports = isOdd

@@ -11,10 +11,19 @@
  * ex: countNumbers([99, 99, 11, 12, 13, 58])
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
-
-function countNumbers() {
- 
+//**Got to return the object but its the incorrect count**
+function countNumbers(arr) {
+    let countsNums = {};
+    for(let i = 0; i < arr.length; i++) {
+        let num = arr[i]
+        if (countsNums[arr] === undefined) {
+            countsNums[arr] = 1;
+        } else {
+            countsNums[arr] = countsNums[arr] + 1;
+        }
+    }
+    return countsNums;
 }
-
+    
 
 module.exports = countNumbers

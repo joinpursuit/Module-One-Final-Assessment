@@ -13,8 +13,13 @@
  */
 
 function countNumbers() {
- 
-}
 
+let array = [];    
+
+for (i = 0; 1 < n; i++) {
+    
+}//Run though array elements
+
+}
 
 module.exports = countNumbers

@@ -15,8 +15,9 @@
 * returns: [2, 4, 6]
 */
 function removeOddNumbers(arr) {
-    let newArray = arr.filter ((elem) => elem % 2 === 0)
-    return newArray
+    return arr.filter(elem => elem % 2 === 0)
+    // let newArray = arr.filter ((elem) => elem % 2 === 0)
+    // return newArray
 }
 
 module.exports = removeOddNumbers

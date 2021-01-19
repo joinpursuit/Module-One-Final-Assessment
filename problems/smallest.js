@@ -14,8 +14,10 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
+function smallest(arr) {
+let sorted = arr.sort((el1, el2) => el1 - el2)
+return sorted[0]
   
 }
-
+console.log(smallest([-3,3, 0]))
 module.exports = smallest

@@ -18,8 +18,10 @@
 * ex: removeEvenStrings([])
 * returns: []
 */
+//returns new arr either create variable or use .map or .filter
 
-function removeEvenStrings() {
+function removeEvenStrings(arr) {
+    return arr.filter((el)=> el.length%2===1)
 
 }
 

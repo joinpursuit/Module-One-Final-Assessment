@@ -14,8 +14,7 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
+function smallest(arr) {
   
 }
-
 module.exports = smallest

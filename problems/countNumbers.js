@@ -12,8 +12,13 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+ let newArr = []
+for (let i = 0; i < arr.length; i += 1) {
+    
+    // irid through arr, 
+    //list all numbers in arr and how many of each 
+  
 }
 
 

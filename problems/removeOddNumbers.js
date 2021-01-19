@@ -14,8 +14,12 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
 
+function removeOddNumbers(arr) {
+  let evenArr = arr.filter((num) => {
+    return num % 2 === 0;
+  });
+  return evenArr;
 }
 
 module.exports = removeOddNumbers

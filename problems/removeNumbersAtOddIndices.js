@@ -10,7 +10,12 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
+function removeNumbersAtOddIndices(arr) {
+    let remove = arr.filter((el,i)=>{
+        return i % 2 ===0
+    })
+    return remove
+
 
 }
 

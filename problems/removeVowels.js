@@ -14,7 +14,17 @@
 *
 */
 
-function removeVowels() {
+function removeVowels(str) {
+    let trash = ''
+    let filtered = ''
+    for(let i = 0;i<str.length;i++){
+        if(str[i] === 'a' || str[i] === 'e' ||str[i]=== 'i'||str[i] ==='o'||str[i] === 'u'||str[i] === 'A' || str[i] === 'E' ||str[i]=== 'I'||str[i] ==='O'||str[i] === 'U'){
+            trash = trash + str[i]
+          } else{
+            filtered = filtered + str[i]
+          }
+        }
+    return filtered
 
 }
 

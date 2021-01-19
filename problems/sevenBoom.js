@@ -11,8 +11,22 @@
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
 
-function sevenBoom() {
+function sevenBoom(n) {
+    let num2str = n.toString()
+    let array = []
+    let num = 1
+    while(num <= n){
+        if(num % 7 === 0 || num === 17|| num === 27|| num === 37|| num === 47|| num === 57){
+            array.push('BOOM')
+        }else{
+        array.push(num)
+        }
+        num += 1
+    }
+    return array
 
 }
+console.log(sevenBoom(20))
+
 
 module.exports = sevenBoom

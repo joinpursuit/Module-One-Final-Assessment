@@ -10,8 +10,12 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
-
+function removeNumbersAtOddIndices(arr) {
+let oddNum = []
+for(let i = 0; i < arr.length; i+=2) {
+    oddNum.push(arr[i])
+}
+return oddNum
 }
 
 module.exports = removeNumbersAtOddIndices

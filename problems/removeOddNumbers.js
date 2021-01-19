@@ -14,7 +14,9 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
+function removeOddNumbers(arr) {
+    let noOddnumbers = arr.filter((elem) => { return elem % 2 === 0});
+    return noOddnumbers
 
 }
 

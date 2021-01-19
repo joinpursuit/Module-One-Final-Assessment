@@ -10,8 +10,13 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+function getCountriesSortedByPopulation(arr) {
+    let arrSorted = arr.sort(function(a,b) {
+        return b.population - a.population
+      }).map(pops => {
+          return pops.country
+      })
+    return arrSorted
 }
 
 module.exports = getCountriesSortedByPopulation

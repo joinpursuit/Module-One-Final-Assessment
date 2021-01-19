@@ -10,8 +10,8 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
-
+function removeNumbersAtOddIndices(arr) {
+    return arr.filter((value, index) => index % 2 === 0)
 }
 
 module.exports = removeNumbersAtOddIndices

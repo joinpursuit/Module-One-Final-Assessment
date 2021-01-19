@@ -12,8 +12,14 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let i = 0
+    let objCounter = {}
+    while(i < arr.length) {
+        objCounter[arr[i]] = (objCounter[arr[i]] || 0) + 1
+        i++
+    }
+    return objCounter
 }
 
 

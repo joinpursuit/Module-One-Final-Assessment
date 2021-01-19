@@ -10,8 +10,20 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+function getCountriesSortedByPopulation(arr) {
+    let newArr = []
+    let finalArr = []
+    let i = 0
+    let a = 0
+    while(i < arr.length){
+        newArr[i] = arr[i]
+        i++
+    }
+    newArr.sort((a, b) => b.population - a.population)
+    for(let i in newArr) {
+        finalArr[i] = newArr[i].country
+    }
+    return finalArr
 }
 
 module.exports = getCountriesSortedByPopulation

@@ -14,8 +14,18 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    let i = 0
+    let vowelsRemoved = ''
+    while(i < str.length) {
+        if((str[i] !== 'a') && (str[i] !== 'e') && (str[i] !== 'i') && (str[i] !== 'o') && (str[i] !== 'u')) {
+            if((str[i] !== 'A') && (str[i] !== 'E') && (str[i] !== 'I') && (str[i] !== 'O') && (str[i] !== 'U')) {
+                vowelsRemoved = vowelsRemoved + str[i]
+            }
+        }
+        i++
+    }
+    return vowelsRemoved
 }
 
 module.exports = removeVowels

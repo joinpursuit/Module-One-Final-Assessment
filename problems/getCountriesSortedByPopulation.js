@@ -9,9 +9,57 @@
 * returns: ["China", "Egypt", "Denmark"]
 * 
 */
+//takes in an array of objects
+//and returns sorted by population value. (possibly using .sort)
+let ex1 = [
+    {
+      country: "Algeria",
+      population: 41,
+    },
+    {
+      country: "Belize",
+      population: 0.4,
+    },
+    {
+      country: "China",
+      population: 1386,
+    },
+    {
+      country: "Denmark",
+      population: 6,
+    },
+  ]
 
-function getCountriesSortedByPopulation() {
+  let ex2 = [
+    {
+      country: "Argentina",
+      population: 58,
+    },
+    {
+      country: "Egypt",
+      population: 145,
+    },
+    {
+      country: "Russia",
+      population: 1386,
+    },
+    {
+      country: "New Zealand",
+      population: 66,
+    },
+  ]
 
+function getCountriesSortedByPopulation(arr) {
 }
+ let sorted = []
+     for(let key in arr) {
+         sorted.push(key)
+     }
+     sorted.sort(function(a,b) {
+         return b-a
+     })
 
+ 
 module.exports = getCountriesSortedByPopulation
+
+console.log(getCountriesSortedByPopulation(ex1))

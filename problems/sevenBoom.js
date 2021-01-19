@@ -11,7 +11,16 @@
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
 
-function sevenBoom() {
+function sevenBoom(n) {
+    let array = []
+    for (let i = 1; i <= n; i++){
+        if (i % 7 === 0 || (i + "").includes(7)){
+            array.push("BOOM")
+        } else {
+            array.push(i)
+        }
+    }
+    return array
 
 }
 

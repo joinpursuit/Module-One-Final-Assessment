@@ -12,9 +12,22 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
+function countNumbers(arr) {
+ let myObject ={}
+ for(let i=0; i < arr.length; i++) {
+    if(arr[i] === ' ') {
+        continue
+    }
+    if (myObject[arr[i]]=== undefined) {
+        myObject[arr[i]] = 1
+    } else {
+        myObject[arr[i]] +=1
+    }
+}
+return myObject
  
 }
+
 
 
 module.exports = countNumbers

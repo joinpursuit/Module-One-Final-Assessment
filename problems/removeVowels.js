@@ -14,8 +14,12 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+let strToArray = str.split('')
+let noLetterE = strToArray.split('e')
+let noLetterA = noLetterE.split('a')
+let newLetter = noLetterA
+return newLetter
 }
 
 module.exports = removeVowels

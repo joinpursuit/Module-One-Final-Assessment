@@ -14,8 +14,17 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    let lowerCase = str.toLowerCase()
+    let newStr = ""
+    for(let i = 0; i < lowerCase.length; i++) {
+        if(lowerCase[i] === "a" ||lowerCase[i] === "e" || lowerCase[i] === "i" || lowerCase[i] === "o" || lowerCase[i] === "u") {
+            newStr = newStr + ""
+        } else {
+            newStr = newStr + str[i]
+        }
+    }
+    return newStr
 }
 
 module.exports = removeVowels

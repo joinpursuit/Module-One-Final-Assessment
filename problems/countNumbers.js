@@ -12,8 +12,21 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let object = {}
+    arr.forEach((elem) => {
+        if(object[elem]) {
+            return object[elem] = object[elem] +1
+        }
+        return object[elem] = 1
+    })
+    return object
+
+    // let object = arr.map((c) => {
+    //     for (let i = 0; i< arr.length; i++){   
+    //     }
+    // })
+    // return object
 }
 
 

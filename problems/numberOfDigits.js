@@ -7,8 +7,11 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    return n.toString().length
+    // if (typeof n === "number") {
+    //     return n.length
+    // }
 }
 
 module.exports = numberOfDigits

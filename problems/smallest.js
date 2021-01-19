@@ -14,8 +14,12 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
-  
+function smallest(nums) {
+    let smallest =nums[0]
+    for( let i =0; i<= nums.length -1; i++)
+    if (nums[i]< smallest)
+    smallest = nums[i]
+    return smallest
 }
 
 module.exports = smallest

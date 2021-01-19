@@ -10,8 +10,17 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
+    
+        let sortCriteria = function(a, b) {
+          return a.population > b.population ? -1 : 1;
+        }
+        let sortedArray = arr.sort(sortCriteria);
+        let onlyCountryNames = sortedArray.map(function(el) {
+          return el.country;
+        })
+        return onlyCountryNames;
+      }
 
-}
 
 module.exports = getCountriesSortedByPopulation

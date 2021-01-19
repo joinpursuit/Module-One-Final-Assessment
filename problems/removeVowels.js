@@ -14,8 +14,15 @@
 *
 */
 
-function removeVowels() {
-
-}
+function removeVowels(str) {
+    let arr = []
+    for (let i = 0; i < str.length; i++) {
+      if (!(str[i] === "A" || str[i] === "a" || str[i] === "E" || str[i] === "e" || str[i] === "I" || str[i] === "i" || str[i] === "O" || str[i] === "o" || str[i] === "U" || str[i] === "u")) {
+        arr.push(str[i])
+      }
+    }
+    return arr.join("")
+    }
+    console.log(removeVowels("Sunny apple world"))
 
 module.exports = removeVowels

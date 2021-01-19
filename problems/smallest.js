@@ -14,8 +14,12 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
-  
+function smallest(arr) { 
+    let smallestNumber = arr[0];
+    arr.forEach(num => {
+        num <= smallestNumber ? smallestNumber = num : false
+    })
+    return smallestNumber;
 }
 
 module.exports = smallest

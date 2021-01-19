@@ -12,9 +12,14 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    return arr.reduce((count, num) => {
+        if(num in count){
+            count[num] += 1;
+        }else{
+            count[num] = 1;
+        }
+        return count
+    }, {})
 }
-
-
 module.exports = countNumbers

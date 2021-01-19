@@ -11,8 +11,19 @@
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
 
-function sevenBoom() {
-
+function sevenBoom(n) {
+    let sevenBoomArray = []
+    for(let i = 1; i <= n; i += 1){
+        let numToStr = i
+        if(i%7 === 0){
+            sevenBoomArray.push('BOOM')
+        }else if(numToStr.toString().split("").includes('7')){
+            sevenBoomArray.push('BOOM')
+        }else{
+            sevenBoomArray.push(i)
+        }
+    }
+    return sevenBoomArray;
 }
 
 module.exports = sevenBoom

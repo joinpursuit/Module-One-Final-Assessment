@@ -14,8 +14,26 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    return str
+    .split("")
+    .filter(el => {
+        switch(true){
+            case el === 'a' || el === 'A':
+                return false;
+            case el === 'e' || el === 'E':
+                return false;
+            case el === 'i' || el === 'I':
+                return false;
+            case el === 'o' || el === 'O':
+                return false;
+            case el === 'u' || el === 'U':
+                return false;
+            default:
+                return true;
+        }
+    })
+    .join("")
 }
 
 module.exports = removeVowels

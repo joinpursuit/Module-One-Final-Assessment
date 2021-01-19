@@ -7,8 +7,10 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    return n
+    .toString()
+    .split("")
+    .length
 }
-
 module.exports = numberOfDigits

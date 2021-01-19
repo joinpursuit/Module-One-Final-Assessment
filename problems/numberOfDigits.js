@@ -7,7 +7,16 @@
 
 */
 
-function numberOfDigits() {
+function numberOfDigits(number) {
+
+
+let counter = 0;
+
+if (number >= 1) ++counter;
+
+while(n != 0)
+
+
 
 }
 

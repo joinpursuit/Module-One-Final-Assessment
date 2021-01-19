@@ -11,14 +11,19 @@
 * returns: [5, 3, 1]
 */
 function removeNumbersAtOddIndices(arr) {
-    let newArray = []
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 !== 0) {
-            newArray.push(arr[i])
-        }
+    let newArray =[]
+    for(let i = 0; i < arr.length; i += 2){
+        newArray.push(arr[i])
     }
     return newArray
-    
+
+    // let newArray = []
+    // for(let i = 0; i < arr.length; i++){
+    //     if(arr[i] % 2 !== 0) {
+    //         newArray.push(arr[i])
+    //     }
+    // }
+    // return newArray
 }
 
 module.exports = removeNumbersAtOddIndices

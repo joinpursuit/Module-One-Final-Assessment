@@ -19,8 +19,26 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+return arr.filter(str => str.length % 2 === 1)
 }
+
+let arr = ([
+    "The",
+    "only",
+    "thing",
+    "we",
+    "have",
+    "to",
+    "fear",
+    "is",
+    "fear",
+    "itself",
+  ])
+
+
+// console.log(arr[0].length)
+
+console.log(removeEvenStrings(arr))
 
 module.exports = removeEvenStrings

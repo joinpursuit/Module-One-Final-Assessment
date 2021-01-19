@@ -14,8 +14,9 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    str = str.replace( /[aeiou]/ig, '' )
+    return str
 }
 
 module.exports = removeVowels

@@ -13,6 +13,7 @@
 
 function sevenBoom(n) {
     
+    
 }
 
 module.exports = sevenBoom

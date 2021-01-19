@@ -23,6 +23,7 @@ function smallest(arr) {
         }
     }
     return smallestNum
+    
 }
 
 console.log(smallest(0,1,2,3,4,5,1))

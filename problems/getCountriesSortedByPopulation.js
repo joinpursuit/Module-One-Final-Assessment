@@ -15,6 +15,7 @@ function getCountriesSortedByPopulation(arr) {
         return next.population - current.population
     })
     return sorted
+    
 }
 
 module.exports = getCountriesSortedByPopulation

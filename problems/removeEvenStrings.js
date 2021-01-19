@@ -25,6 +25,7 @@ function removeEvenStrings(arr) {
         newArray.push(arr)
     }
     return newArray
+    
 }
 
 module.exports = removeEvenStrings

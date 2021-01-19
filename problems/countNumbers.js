@@ -13,12 +13,20 @@
  */
 
 function countNumbers(arr) {
-    let object = arr.map((c) => {
-        for (let i = 0; i< arr.length; i++){
-            
+    let object = {}
+    arr.forEach((elem) => {
+        if(object[elem]) {
+            return object[elem] = object[elem] +1
         }
+        return object[elem] = 1
     })
     return object
+
+    // let object = arr.map((c) => {
+    //     for (let i = 0; i< arr.length; i++){   
+    //     }
+    // })
+    // return object
 }
 
 

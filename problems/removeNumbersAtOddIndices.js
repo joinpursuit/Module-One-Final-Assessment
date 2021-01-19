@@ -18,6 +18,7 @@ function removeNumbersAtOddIndices(arr) {
         }
     }
     return newArray
+    
 }
 
 module.exports = removeNumbersAtOddIndices

@@ -14,8 +14,16 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    let vowels = "aeiouAEIOU"
+    return str.split("").filter(e => !vowels.includes(e)).join("")
+    // let newStr = ""
+    // for(let i = 0; i < str.length; i++){
+    //     if(!vowels.includes(str.charAt(i))){
+    //         newStr += str.charAt(i)
+    //     }
+    // }
+    // return newStr
 }
 
 module.exports = removeVowels

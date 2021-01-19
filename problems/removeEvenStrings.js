@@ -21,8 +21,11 @@
 
 function removeEvenStrings(arr) {
     let newArray = []
-    if(arr.length % 2 !== 0) {
-        newArray.push(arr)
+    let chars = arr.toString().split(",")
+    for(let i = 0; i < chars.length; i++){
+        if(chars[i] % 2 !== 0) {
+            newArray.push(chars[i])
+        }
     }
     return newArray
     

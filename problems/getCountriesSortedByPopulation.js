@@ -10,7 +10,13 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
+let sortArr = []
+arr.sort((a,b) => b.population - a.population)
+    for(i = 0; i < arr.length; i++){
+        sortArr.push(arr[i].country)
+    }
+    return sortArr 
 
 }
 

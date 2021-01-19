@@ -1,4 +1,4 @@
-/**
+/** CC from Vid and Web Source
 
 * Returns an array of country names sorted in descending order by population (biggest to smallest)
 * 
@@ -10,8 +10,13 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+function getCountriesSortedByPopulation(array) {
+        let newArray = [];
+        for (let i = arr.length - 1; i >= 0; i--) {
+          newArray.push(arr[i]);
+        }
+        return newArray;
+      }
 }
 
 module.exports = getCountriesSortedByPopulation

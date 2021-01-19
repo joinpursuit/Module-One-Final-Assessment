@@ -14,8 +14,8 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
-
-}
+function removeOddNumbers(arr) {
+    return arr.filter(value => value % 2 === 1);
+    }
 
 module.exports = removeOddNumbers

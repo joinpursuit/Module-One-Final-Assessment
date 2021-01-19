@@ -19,8 +19,10 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
-}
+function removeEvenStrings (arr) {
+    return arr.filter((arr)=>{
+        return arr % 2 === 1
+      })
+    };
 
 module.exports = removeEvenStrings

@@ -14,8 +14,8 @@
 *
 */
 
-function removeVowels() {
-
+function removeVowels(str) {
+    
 }
-
+            
 module.exports = removeVowels

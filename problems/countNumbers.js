@@ -12,8 +12,8 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    
 }
 
 

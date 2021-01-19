@@ -19,8 +19,17 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
+function removeEvenStrings(arr) {
+    let output = []
+    if (arr = []) {
+        return output
+    } 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr < 1) {
+            return output.push([arr[i]])
+        }
+    }
+    
 }
 
 module.exports = removeEvenStrings

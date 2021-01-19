@@ -10,8 +10,11 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
+function getCountriesSortedByPopulation(arr) {
+
+    return arr
 
 }
+
 
 module.exports = getCountriesSortedByPopulation

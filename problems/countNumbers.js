@@ -1,4 +1,3 @@
-
 /** 
  * Count all the numbers in an array
  * 
@@ -12,8 +11,19 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+function countNumbers(arr) {
+    let countNum = {}
+
+    arr.forEach((arr) => {
+        if (countNum[arr]) {
+            countNum[arr] = countNum[arr] + 1
+        } else {
+            countNum[arr] = 1
+        }
+    })
+
+    return countNum
+
 }
 
 

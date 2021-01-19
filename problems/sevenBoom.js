@@ -11,7 +11,20 @@
 * 17 is also replaced with 'BOOM' because it contains a 7.
 */
 
-function sevenBoom() {
+function sevenBoom(n) {
+    let answer = [];
+    for(i = 1; i<=n ; i++) {
+      let digitToString = i.toString();
+      if( i % 7 === 0 ) {
+        answer.push('BOOM');
+      }
+      else if(digitToString.includes('7')) {
+        answer.push('BOOM');
+      } else {
+        answer.push(i);
+      }
+    }
+    return answer;  
 
 }
 

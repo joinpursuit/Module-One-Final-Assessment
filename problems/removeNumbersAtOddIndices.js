@@ -10,8 +10,16 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
-
+function removeNumbersAtOddIndices(arr) {
+for (let i = 0; i < arr.length; i++){
+    arr.splice(i + 1, 1)
+    }
+    return arr;
 }
+
+
+arr = [0, 1, 2, 3, 4]
+
+console.log(removeNumbersAtOddIndices(arr))
 
 module.exports = removeNumbersAtOddIndices

@@ -10,8 +10,35 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+function getCountriesSortedByPopulation(arr) {
+ return arr.sort((a, b) => 
+ b.population - a.population).map(str => str.country)
 }
+
+// let arr = [51, 10, 12];
+
+ arr = [
+    {
+      country: "Algeria",
+      population: 41,
+    },
+    {
+      country: "Belize",
+      population: 0.4,
+    },
+    {
+      country: "China",
+      population: 1386,
+    },
+    {
+      country: "Denmark",
+      population: 6,
+    },
+  ]
+
+console.log(getCountriesSortedByPopulation(arr))
+
+// console.log(arr)
+
 
 module.exports = getCountriesSortedByPopulation

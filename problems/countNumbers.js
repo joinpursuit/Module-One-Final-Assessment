@@ -12,8 +12,17 @@
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
  */
 
-function countNumbers() {
- 
+const countNumbers = (arr) => {
+    let obj = [];
+      arr.forEach((number) => {
+          if(obj[number]){
+              obj[number] += 1;
+          }else {
+              obj[number] = 1;
+          }
+      });
+
+    return obj;
 }
 
 

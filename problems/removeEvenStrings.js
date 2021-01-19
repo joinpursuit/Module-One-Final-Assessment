@@ -19,8 +19,13 @@
 * returns: []
 */
 
-function removeEvenStrings() {
-
-}
+const removeEvenStrings = (arr) => {
+    return arr.filter((el) => {
+        if(typeof el === "string" && el.length  % 2 === 1){
+            return el;
+        }
+    })
+    }
+   
 
 module.exports = removeEvenStrings

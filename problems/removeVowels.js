@@ -14,8 +14,14 @@
 *
 */
 
-function removeVowels() {
+const removeVowels = (str) => {
+    if(str === "Aa" || str === "Ee" || str === "Ii" || str === "Oo" || str === "Uu"){
+        return str;
+    }else{
+        return str;
+    }
+    
+    }
 
-}
 
 module.exports = removeVowels

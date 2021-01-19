@@ -10,7 +10,10 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
+const removeNumbersAtOddIndices = (arr) => {
+    for(let i = 0; i < arr.length; i++){
+        return arr.splice(i + 1, 1);
+    }
 
 }
 

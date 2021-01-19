@@ -14,7 +14,10 @@
 * ex: removeOddNumbers([2, 4, 6])
 * returns: [2, 4, 6]
 */
-function removeOddNumbers() {
+const removeOddNumbers = (arr) => {
+    return arr.filter((el) => {
+        return el % 2 === 0;
+    })
 
 }
 

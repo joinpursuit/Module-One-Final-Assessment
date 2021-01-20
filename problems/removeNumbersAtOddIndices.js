@@ -1,6 +1,6 @@
-/** Takes an array of numbers and returns a new array 
-* with only the numbers at odd indices in the input array. 
-* 
+/** Takes an array of numbers and returns a new array
+* with only the numbers at odd indices in the input array.
+*
 * @param {number[]} arr - The input array
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 *
@@ -10,8 +10,15 @@
 * ex: removeNumbersAtOddIndices([5, 4, 3, 2, 1]);
 * returns: [5, 3, 1]
 */
-function removeNumbersAtOddIndices() {
+function removeNumbersAtOddIndices(arr) {
+    let odd = [];
 
-}
+    for (let i = 0; i < arr.length; i+=2) {
+        odd.push(arr[i]);
+
+        }
+        return odd;
+    }
+
 
 module.exports = removeNumbersAtOddIndices

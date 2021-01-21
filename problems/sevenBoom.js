@@ -18,7 +18,7 @@ for (let i = 1; i <= n; i++){
     if(i % 7 === 0){
         arr.push("BOOM")
     }
-    else if(str.toString().split("").includes("7")){
+    else if(str.toString().includes("7")){
         arr.push("BOOM")
     }
     else{

@@ -27,5 +27,13 @@ function removeVowels(str) {
     }
     return word
 }
+// let newStr = ""
+// let vowels = ['a','A','e','E','i','I','o','O','u','U']
+// for (let i = 0; i < str.length; i++){
+  // if (!vowels.includes(str[i])){
+  //newStr += str[i]
+// }
+// }
+// return newStr
 
 module.exports = removeVowels

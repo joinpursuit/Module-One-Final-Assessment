@@ -17,7 +17,7 @@
 function removeOddNumbers(arr) {
     let newArr = arr.filter((num, i) =>{
         if (num % 2 === 0) {
-            return true 
+            return true
         } 
       })
       return newArr

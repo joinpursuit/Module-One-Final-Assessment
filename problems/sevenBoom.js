@@ -4,13 +4,21 @@
 * @param {number} n - The number to count up to
 * @returns {number[]} - An array matching the pattern described above
 */
-function sevenBoom(num) {
-
-    let output = num.every((el) => {
-        Math.floor(el * 7) && (el % 10 === 7).replace("BOOM")
-        return output
-    })
-
+function sevenBoom(n) {
+    const output = [];
+    for (let i = 1; i <= n; i++) {
+        if (i % 7 === 0 || i.toString().includes("7")) {
+            output.push('BOOM')
+        } else {
+            output.push(i)
+        }
+    }
+    return output
 }
+// let output = num.every((el) => {
+//     Math.floor(el * 7) && (el % 10 === 7).replace("BOOM")
+//     return output
+// })
+
 
 module.exports = sevenBoom

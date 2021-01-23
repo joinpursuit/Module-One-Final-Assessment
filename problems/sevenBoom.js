@@ -8,12 +8,12 @@ function sevenBoom(n) {
     const output = [];
     for (let i = 1; i <= n; i++) {
         if (i % 7 === 0 || i.toString().includes("7")) {
-            output.push('BOOM')
+            output.push('BOOM');
         } else {
-            output.push(i)
+            output.push(i);
         }
     }
-    return output
+    return output;
 }
 // let output = num.every((el) => {
 //     Math.floor(el * 7) && (el % 10 === 7).replace("BOOM")

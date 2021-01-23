@@ -7,8 +7,15 @@
 
 */
 
-function numberOfDigits() {
-
+function numberOfDigits(n) {
+    let digits = 0
+    let str = n.toString()
+    for (let element of str) {
+        digits++
+    }
+    return digits
 }
+
+console.log(numberOfDigits(2784))
 
 module.exports = numberOfDigits

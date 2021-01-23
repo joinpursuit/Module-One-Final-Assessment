@@ -10,8 +10,40 @@
 * 
 */
 
-function getCountriesSortedByPopulation() {
-
+// takes in an array with objects holding a country as key and it's population number as value
+// need to return country names with lowest to highest population
+// will sort population number from highest to lowest
+// will access the property values with arr.country
+// 
+function getCountriesSortedByPopulation(arr) {
+  arr.sort((a, b) => {
+    return b.population - a.population
+  });
+  let arrCountries = []
+  for (let element of arr) {
+    arrCountries.push(element["country"])
+  }
+  return arrCountries
 }
+  
+
+console.log(getCountriesSortedByPopulation([
+    {
+      country: "Algeria",
+      population: 41,
+    },
+    {
+      country: "Belize",
+      population: 0.4,
+    },
+    {
+      country: "China",
+      population: 1386,
+    },
+    {
+      country: "Denmark",
+      population: 6,
+    },
+  ]))
 
 module.exports = getCountriesSortedByPopulation

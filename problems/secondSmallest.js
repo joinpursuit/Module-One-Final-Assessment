@@ -29,7 +29,7 @@ function secondSmallest(arr) {
 
         }
     }
-    return arr2
+    return arr2;
 
 }
 

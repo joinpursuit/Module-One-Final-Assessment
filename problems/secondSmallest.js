@@ -9,15 +9,15 @@
 function secondSmallest(arr) {
 
 
-    if (arr.length < 2) {
-        return null;
-    }
-    arr.sort((a, b) => a - b)
-    return arr[1];
+    // if (arr.length < 2) {
+    //     return null;
+    // }
+    // arr.sort((a, b) => a - b)
+    // return arr[1];
 
 
-    let arr1 = 99;
-    let arr2 = 99;
+    let arr1 = Infinity;
+    let arr2 = Infinity;
 
     for (let i = 0; i < arr.length; i++) {
         const num = arr[i]

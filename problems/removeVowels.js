@@ -20,11 +20,12 @@
 // we then iterate through the newArr
 // 
 function removeVowels(str) {
-    let vowel = "aeiou" + "AEIOU"
+    let vowel = "aeiou" + "aeiou".toUpperCase()
     let newStr = str
     let chars
 
     for (let i = 0; i < vowel.length; i++) {
+        console.log(chars, newStr)
         chars = newStr.split(vowel[i])
         newStr = chars.join('')
     }
@@ -32,5 +33,15 @@ function removeVowels(str) {
 }
 
 console.log(removeVowels("Hello kiddo"))
+
+// let yourName = 'Ivan'
+// yourName.split === String.prototype.split
+// true
+// yourName.prototype === String.prototype
+// false
+
+// String.prototype is the entire name of the object.
+// It has a bunch of methods, but no properties
+
 
 module.exports = removeVowels

@@ -12,16 +12,20 @@
 
 // takes in an array with objects holding a country as key and it's population number as value
 // need to return country names with lowest to highest population
-// will sort population number from lowest to highest
+// will sort population number from highest to lowest
 // will access the property values with arr.country
 // 
 function getCountriesSortedByPopulation(arr) {
-    let newObj = {}
-    for (let element in arr) {
-        newObj[element] = arr[element]
-    }
-    return newObj
+  arr.sort((a, b) => {
+    return b.population - a.population
+  });
+  let arrCountries = []
+  for (let element of arr) {
+    arrCountries.push(element["country"])
+  }
+  return arrCountries
 }
+  
 
 console.log(getCountriesSortedByPopulation([
     {

@@ -15,8 +15,9 @@
 */
 
 function smallest(arr) {
-    let small = Math.min.apply(Math, arr)
-  return small
+let small = Math.min.apply(Math, arr)
+return small
 }
 
 module.exports = smallest
+

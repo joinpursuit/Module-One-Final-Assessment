@@ -16,20 +16,20 @@ function secondSmallest(arr) {
     // return arr[1];
 
 
-    let arr1 = Infinity;
-    let arr2 = Infinity;
+    let smallest = Infinity;
+    let secondSmallest = Infinity;
 
     for (let i = 0; i < arr.length; i++) {
         const num = arr[i]
-        if (num < arr1) {
-            arr2 = arr1
-            arr1 = num
-        } else if (num < arr2) {
-            arr2 = num
+        if (num < smallest) {
+            secondSmallest = smallest
+            smallest = num
+        } else if (num < secondSmallest) {
+            secondSmallest = num
 
         }
     }
-    return arr2;
+    return secondSmallest;
 
 }
 

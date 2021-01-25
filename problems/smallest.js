@@ -14,8 +14,11 @@
 * returns 1 (does not matter if it is the first or second 1)
 */
 
-function smallest() {
-  
+function smallest(arr) {
+  let arrSmallest = arr.sort((a, b) => {
+      return a - b
+  })
+  return arrSmallest[0]
 }
 
 module.exports = smallest

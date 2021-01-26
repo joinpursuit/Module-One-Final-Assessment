@@ -10,14 +10,22 @@
  * 
  * ex: countNumbers([99, 99, 11, 12, 13, 58])
  * returns { 99: 2, 11: 1, 12: 1, 13: 1, 58: 1 }
- */
+*/
 
 function countNumbers(arr) {
-    for (let i = 0; i < arr.length; i++) { 
-    console.log(arr[i]);
+    let numObj = {}
+    for (let i = 0; i < arr.length; i++) {
+        if (numObj[arr[i]]) {
+            numObj[arr[i]] = (numObj[arr[i]]) + 1
+        } else {
+            numObj[arr[i]] = 1
         }
- return arr[i]   
+
+        console.log(numObj)
+    }
+    return numObj
 }
+
 
 
 

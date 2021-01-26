@@ -13,11 +13,11 @@
 
 function removeNumbersAtOddIndices(arr) {
     let oddIndx = []
-    for (let i = 0; i < arr.length - 1; i+=2){
-        oddIndx.push(arr[i]+1);
+    for (let i = 0; i < arr.length; i+=2){
+        oddIndx.push(arr[i]);
     }
-    console.log(oddIndx)
     return oddIndx
 }
+console.log(removeNumbersAtOddIndices([5,4,3,2,1]))
 
 module.exports = removeNumbersAtOddIndices

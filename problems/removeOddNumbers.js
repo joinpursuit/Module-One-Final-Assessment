@@ -3,8 +3,15 @@
 * @returns {number[]} - The input array with all odd number removed
 */
 function removeOddNumbers(arr) {
-    let oddNumbers = arr.filter(a => a % 2 === 0)
-    return oddNumbers
+    let output = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            output.push(arr[i]);
+        }
+    }
+    return output;
 }
+
+
 
 module.exports = removeOddNumbers

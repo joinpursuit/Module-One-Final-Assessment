@@ -7,7 +7,10 @@
 
 */
 
-function numberOfDigits() {
+function numberOfDigits(n) {
+    let digits = n.toString().length
+    return digits
+   
 
 }
 

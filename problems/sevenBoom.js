@@ -12,7 +12,6 @@ function sevenBoom(n) {
         } else {
             output.push(i)
         }
-        console.log(output);
     }
     return output;
 }

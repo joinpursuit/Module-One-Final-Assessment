@@ -8,10 +8,7 @@
 */
 
 function isOdd(n) {
-    if (n % 2 === 1) {
-        return true
-    }
-    return false
+    return n % 2 === 1;
 }
 
 module.exports = isOdd

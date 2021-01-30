@@ -7,10 +7,9 @@
 */
 
 function removeEvenStrings(arr) {
-    output = arr.filter((el, index) => !(index % 2));
+    const output = arr.filter(el => el.length % 2 === 1)
     return output;
 }
-
 
 
 
@@ -22,6 +21,7 @@ function removeEvenStrings(arr) {
 // }
 
 // return ouptut;
+
 
 module.exports = removeEvenStrings
 

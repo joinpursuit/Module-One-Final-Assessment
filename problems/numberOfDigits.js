@@ -9,7 +9,7 @@
 
 function numberOfDigits(n) {
     let num = n
-    return Math.floor(num.toString().length)
+    return num.toString().length
 }
 
 

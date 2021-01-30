@@ -3,16 +3,20 @@
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 */
 function removeNumbersAtOddIndices(arr) {
-    let output = [];
-    for (i = 0; i < arr.length; i += 2) {
-        output.push(arr[i]);
-
-    }
-
-
-
+    let output = arr.filter((el, index) => !(index % 2));
     return output;
-
 }
+
+
+
+
+
+
+// for (i = 0; i < arr.length; i += 2) {
+//     output.push(arr[i]);
+
+// }
+
+
 
 module.exports = removeNumbersAtOddIndices

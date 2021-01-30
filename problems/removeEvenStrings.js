@@ -7,15 +7,21 @@
 */
 
 function removeEvenStrings(arr) {
-    let ouptut = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].length % 2 === 1) {
-            ouptut.push(arr[i]);
-        }
-    }
-
-    return ouptut;
+    output = arr.filter((el, index) => !(index % 2));
+    return output;
 }
+
+
+
+
+// let ouptut = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length % 2 === 1) {
+//         ouptut.push(arr[i]);
+//     }
+// }
+
+// return ouptut;
 
 module.exports = removeEvenStrings
 

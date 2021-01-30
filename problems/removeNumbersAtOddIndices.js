@@ -3,7 +3,7 @@
 * @returns {number[]} - An array removing all elements initially appearing at an odd index
 */
 function removeNumbersAtOddIndices(arr) {
-    let output = arr.filter((el, index) => !(index % 2));
+    output = arr.filter((el, index) => !(index % 2));
     return output;
 }
 
